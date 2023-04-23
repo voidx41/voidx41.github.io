@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+        <meta name="author" content="voidx41">
+        <meta name="keywords" content="voidx41, cybersecurity">
+        <title>
+          void_space
+        </title>
+        <link rel = "icon" href ="./void.png" type = "image/x-icon">
+        <script>
+          function dt(){
+          var dt= new Date();
+          var sdt=dt.toString().slice(0,25);
+          document.getElementById('datehere').innerHTML=sdt;
+          }
+        </script>
+    </head>
+    <body onload="dt()">
+      <div class="container">
+        <div class="imag-container">
+          <img src="./voidx41.png" alt="Void Logo">
+          <h1>voidx41</h1>
+          <p class="term">
+            Last login: <span id="datehere"></span> on ttys041<br>
+            root@void:~# whoami
+          </p>
+        </div>
+        <div class="nav">
+          <a href="#about">About</a>
+          <a href="#profiles">Profiles</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="c1">
+          <p id="c1a">Don't blame me, blame the code!</p>
+        </div>
+        <div class="content" id="about">
+          <p class="nav-head">
+            About Me
+          </p>
+          <p>
+            Hi, I'm void. I'm a cybersec enthusiast and a student who loves learning new things and reading writeups 
+            about the latest security vulnerabilities. It's thrilling
+            to figure out how to break into systems and uncover secrets that no one else knows. I'm passionate about 
+            staying up-to-date with the latest cyber security trends. I also
+            enjoy participating in Capture The Flag (CTF) competitions. Every day, I strive to become better at what I
+            do by constantly learning new things and challenging myself.
+          </p> <br>
+           <p class="sub-info">Real Name: Aayan Tiwari</p>
+           <p class="sub-info">Country of birth: Nepal</p>
+           <p class="sub-info">Gender: Male</p>
+           <p class="sub-info">BSc (Hons) Ethical Hacking and Cybersecurity, Coventry University</p>
+        </div>
+        <div class="content" id="profiles">
+          <p class="nav-head">
+            Profiles
+          </p>
+          <div class="icons">
+            <div class="htb icns">
+              <a href="https://www.hackthebox.com/profile/1110289" target="_blank">
+                <iconify-icon icon="simple-icons:hackthebox" style="color: white;" width="50"></iconify-icon>
+              </a>
+            </div>
+            <div class="thm icns">
+              <a href="https://tryhackme.com/p/voidx41" target="_blank">
+                <iconify-icon icon="simple-icons:tryhackme" style="color: white;" width="50";></iconify-icon>
+              </a>
+            </div>
+            <div class="git icns">
+              <a href="https://github.com/voidx41" target="_blank">
+                <iconify-icon icon="radix-icons:github-logo" style="color: white;" width="50"></iconify-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="content" id="projects">
+          <p class="nav-head">
+            Projects
+          </p>
+          <p class="desc-content">All the projects are available on my Github profile.</p>
+          <p>
+            <ol>
+              <li><a href="https://github.com/voidx41/voidx41.github.io" target="_blank">Personal Portfolio Website</a></li>
+            </ol>
+          </p>
+        </div>
+        <div class="content" id="contact">
+          <p class="nav-head">
+            Contact
+          </p>
+          <p class="desc-content">
+            Gmail <br>
+            voidx41@gmail.com <br> <br>
+            Discord <br>
+            void-x41#5679
+          </p>
+            <div class="icons icns">
+              <a href="https://www.twitter.com/void_x41" target="_blank">
+                <iconify-icon icon="mdi:twitter" style="color: white;" width="50"></iconify-icon>
+              </a>
+            </div> 
+        </div>
+        <div class="footer">
+          Designed and built by voidx41 
+        </div>
+        <button id="scroll-top" onclick="topfunc()">
+          <iconify-icon icon="material-symbols:arrow-circle-up-outline" style="color: white;" width="50"></iconify-icon>
+        </button>
+        <script>
+          let gotop=document.getElementById("scroll-top");
+          window.onscroll= function() {scrollfunc()};
+          function scrollfunc(){
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            gotop.style.display = "block";
+            } else {
+            gotop.style.display = "none";
+            }
+          }
+          function topfunc(){
+            document.body.scrollTop= 0;
+            document.documentElement.scrollTop= 0;
+          }
+        </script>
+      </div>
+    </body>
+</html>
